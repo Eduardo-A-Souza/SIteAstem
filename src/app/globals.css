@@ -1,0 +1,27 @@
+/* import tawilwind */
+@import "tailwindcss";
+
+/* variaveis de css  */
+@theme {
+  --color-backgorund: #F5F7FA;
+  --color-foreground: #000000;
+}
+
+/* Configurações base da aplicação */
+@layer base {
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-poppins), sans-serif;
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: var(--font-poppins), sans-serif;
+  }
+}
