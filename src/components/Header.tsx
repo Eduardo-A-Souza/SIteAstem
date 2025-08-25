@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Header() {
   return (
     <header className="flex justify-around items-center py-6">
-      <div className="flex items-center justify-center max-w-3/4 w-full bg-white shadow-lg rounded-md p-6 gap-[3%]">
+      <div className="flex items-center justify-center max-w-5/6 w-full bg-white shadow-lg rounded-md p-6 gap-[3%]">
         <Image
           src="/images/logo_header.jpg"
           alt="logo astem"
