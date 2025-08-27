@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import DropDown from "./DropDown"
 
 export function Header() {
   return (
@@ -21,9 +22,7 @@ export function Header() {
         <Link href="/" className="text-xl">
           Inicio
         </Link>
-        <Link href="/pages/produtos" className="text-xl">
-          Produtos
-        </Link>
+        <DropDown />
         <Link href="/pages/contato" className="text-xl">
           Contato
         </Link>
