@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+import { SideBox } from "@/components/SideBox";
 
 export default function sobre() {
   return (
-    <div className="flex justify-around items-center mx-8">
-      <div className="flex flex-col items-center">
+    <div className="flex justify-around items-center mx-30 gap-24 min-h-[65vh]">
+      <div className="flex flex-col items-center justify-around gap-10">
         <Image
           src="/images/logo_main.png"
           alt="logo astem"
@@ -30,10 +30,10 @@ export default function sobre() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center min-w-2/8 bg-backgroundBox gap-8 py-12 rounded-lg mx-4">
-        <Link href="#" className="text-lg rounded-tr-lg rounded-bl-lg bg-bgSelected px-6 py-2 text-gray">Quem somos</Link>
-        <Link href="#" className="text-lg">Missão visão e valores</Link>
-      </div>
+      <SideBox links={[
+        {href: "/pages/sobre", label: "Quem somos", className: ""},
+        {href: "/pages/missao-visao-valores", label: "Missão, visão e valores", className: ""},
+      ]}></SideBox>
     </div>
   );
 }
