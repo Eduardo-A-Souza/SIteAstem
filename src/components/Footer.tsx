@@ -2,6 +2,7 @@ import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -10,22 +11,22 @@ export function Footer() {
         <li className="flex flex-col items-center gap-2">
           <Phone size={28}/>
           Telefone:
-          <a href="#">(61) 9 9903-7164</a>
+          <Link href="#">(61) 9 9903-7164</Link>
         </li>
         <li className="flex flex-col items-center gap-2">
           <Mail size={28}/>
           E-mail:
-          <a href="#">email@email.com</a>
+          <Link href="#">email@email.com</Link>
         </li>
         <li className="flex flex-col items-center gap-2">
           <Instagram size={28}/>
           Instagram:
-          <a href="#">@astembsbs</a>
+          <Link href="#">@astembsbs</Link>
         </li>
         <li className="flex flex-col items-center gap-2">
           <FaWhatsapp size={28}/>
           Whatsapp:
-          <a href="#">(61) 9 9999-9999</a>
+          <Link href="#">(61) 9 9999-9999</Link>
         </li>
       </ul>
     </footer>
