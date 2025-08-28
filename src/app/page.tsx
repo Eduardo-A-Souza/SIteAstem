@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <h2 className="text-4xl pb-16">Quem nós representamos:</h2>
         <ul className="flex justify-around w-4/5 items-center">
           <li>
-            <a href="#">
+            <Link href="#">
               <Image
                 className="duration-500 scale-100 hover:scale-110"
                 src="/images/logo_fanem.png"
@@ -24,10 +25,10 @@ export default function Home() {
                 width={260}
                 height={230}
               />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="#">
               <Image
                 className="duration-500 scale-100 hover:scale-110"
                 src="/images/logo_magnamed.png"
@@ -35,10 +36,10 @@ export default function Home() {
                 width={290}
                 height={230}
               />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="#">
               <Image
                 className="duration-500 scale-100 hover:scale-110"
                 src="/images/logo_protec.png"
@@ -46,7 +47,7 @@ export default function Home() {
                 width={200}
                 height={230}
               />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

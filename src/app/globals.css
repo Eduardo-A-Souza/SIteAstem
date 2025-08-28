@@ -4,9 +4,11 @@
 /* variaveis de css  */
 @theme {
   --color-backgorund: #F5F7FA;
+  --color-backgroundBox: #CFD4D9;
   --color-foreground: #000000;
   --color-gray: #E8E8E8;
   --color-bgFooter: #003366;
+  --color-bgSelected: #005DA2;
 }
 
 /* Configurações base da aplicação */
