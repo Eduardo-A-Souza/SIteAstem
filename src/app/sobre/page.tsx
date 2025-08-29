@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SideBox } from "@/components/SideBox";
+import { SideBox } from "@/app/SideBox";
 
 export default function sobre() {
   return (
@@ -32,14 +32,14 @@ export default function sobre() {
       </div>
       <SideBox
         links={[
-          { href: "/pages/sobre", label: "Quem somos", className: "" },
+          { href: "/sobre", label: "Quem somos", className: "" },
           {
-            href: "/pages/missao-visao-valores",
+            href: "/missao-visao-valores",
             label: "Missão, visão e valores",
             className: "",
           },
           {
-            href: "/pages/politica-privacidade",
+            href: "/politica-privacidade",
             label: "Proteção de dados",
             className: "",
           },

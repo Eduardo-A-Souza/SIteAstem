@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SideBox } from "@/components/SideBox";
+import { SideBox } from "@/app/SideBox";
 
 export default function politicaPrivacidade() {
   return (

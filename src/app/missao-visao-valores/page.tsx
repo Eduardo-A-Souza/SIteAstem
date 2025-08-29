@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SideBox } from "@/components/SideBox";
+import { SideBox } from "@/app/SideBox";
 import { FaBullseye, FaEye, FaHandshake } from "react-icons/fa";
 
 export default function missaoVisaoValores() {
@@ -36,13 +36,13 @@ export default function missaoVisaoValores() {
       </div>
       <SideBox
         links={[
-          { href: "/pages/sobre", label: "Quem somos", className: "" },
+          { href: "/sobre", label: "Quem somos", className: "" },
           {
-            href: "/pages/missao-visao-valores",
+            href: "/missao-visao-valores",
             label: "Missão, visão e valores",
             className: "",
           },
-          { href: "/pages/politica-privacidade", label: "Proteção de dados", className: ""}
+          { href: "/politica-privacidade", label: "Proteção de dados", className: ""}
         ]}
       ></SideBox>
     </div>

@@ -23,10 +23,10 @@ export function Header() {
           Inicio
         </Link>
         <DropDown />
-        <Link href="/pages/contato" className="text-xl">
+        <Link href="/contato" className="text-xl">
           Contato
         </Link>
-        <Link href="/pages/sobre" className="text-xl">
+        <Link href="/sobre" className="text-xl">
           Sobre
         </Link>
       </div>
