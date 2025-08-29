@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+type BoxTitle = string | "none";
+
 type LinkItem = {
   href: string;
   label: string;
@@ -11,24 +13,35 @@ type LinkItem = {
 
 type SideBoxProps = {
   links: LinkItem[];
+  title?: BoxTitle;
 };
 
-export function SideBox({ links }: SideBoxProps) {
+export function SideBox({ links, title = "none" }: SideBoxProps) {
   const pathName = usePathname();
+  const showTitle = () => {
+    if (title != "none") {
+      return <h3 className="text-3xl">{title}</h3>;
+    } else {
+      return "";
+    }
+  };
+  console.log(showTitle());
+
   return (
-    <div className="flex flex-col items-center max-w-90 w-full bg-backgroundBox gap-8 py-8 rounded-3xl mx-4 shadow-lg shadow-[#bbb]">
+    <div className="flex flex-col items-center mix-w-90 max-w-120 w-fit bg-backgroundBox gap-8 py-8 rounded-3xl px-12 shadow-lg shadow-[#bbb]">
+      {showTitle()}
       {links.map((link, index) => {
         const isActive = () => {
           if (link.href == pathName) {
             return "text-white bg-bgSelected";
-          } else return "hover:bg-bgSelected/10 border border-[#aaa]"
+          } else return "hover:bg-bgSelected/10 ";
         };
 
         return (
           <Link
             key={index}
             href={link.href}
-            className={`text-xl px-8 py-3 rounded-tr-xl rounded-bl-xl duration-300 ${
+            className={`text-xl px-8 py-3 rounded-tr-xl rounded-bl-xl duration-300 min-w-70 ${
               link.className || ""
             } ${isActive()}`}
           >

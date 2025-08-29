@@ -30,10 +30,21 @@ export default function sobre() {
           </p>
         </div>
       </div>
-      <SideBox links={[
-        {href: "/pages/sobre", label: "Quem somos", className: ""},
-        {href: "/pages/missao-visao-valores", label: "Missão, visão e valores", className: ""},
-      ]}></SideBox>
+      <SideBox
+        links={[
+          { href: "/pages/sobre", label: "Quem somos", className: "" },
+          {
+            href: "/pages/missao-visao-valores",
+            label: "Missão, visão e valores",
+            className: "",
+          },
+          {
+            href: "/pages/politica-privacidade",
+            label: "Proteção de dados",
+            className: "",
+          },
+        ]}
+      ></SideBox>
     </div>
   );
 }
